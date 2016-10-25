@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "477622097492",
+    "firebase_url": "https://premiados-ea0fa.firebaseio.com",
+    "project_id": "premiados-ea0fa",
+    "storage_bucket": "premiados-ea0fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:477622097492:android:2566016da55f9614",
+        "android_client_info": {
+          "package_name": "com.premiados.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "477622097492-6sfnmvf5tj84ma9bor1mcleoijhhk3b9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
