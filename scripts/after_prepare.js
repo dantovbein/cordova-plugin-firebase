@@ -75,7 +75,11 @@ if (directoryExists("platforms/android")) {
         strings = strings.replace(new RegExp('<string name="google_app_id">([^<]+?)</string>', "i"), '<string name="google_app_id">' + json.client[0].client_info.mobilesdk_app_id + '</string>')
 
         // replace the default value
-        strings = strings.replace(new RegExp('<string name="google_api_key">([^<]+?)</string>', "i"), '<string name="google_api_key">' + json.client[0].api_key[0].current_key + '</string>')
+        if(json.client[0].api_key[0] == undefined)
+          console.log('api_key is not available')
+        else
+          strings = strings.replace(new RegExp('<string name="google_api_key">([^<]+?)</string>', "i"), '<string name="google_api_key">' + json.client[0].api_key[0].current_key + '</string>')
+
 
         fs.writeFileSync("platforms/android/res/values/strings.xml", strings);
       } catch(err) {
